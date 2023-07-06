@@ -8,8 +8,8 @@ from PIL import Image
 
 from lavis.models import load_model_and_preprocess
 
-from utils.ddim_inv import DDIMInversion
-from utils.scheduler import DDIMInverseScheduler
+from src.utils.ddim_inv import DDIMInversion
+from src.utils.scheduler import DDIMInverseScheduler
 
 if torch.cuda.is_available():
     device = "cuda"

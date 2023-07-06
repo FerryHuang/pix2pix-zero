@@ -8,9 +8,9 @@ import glob
 from PIL import Image
 
 from diffusers import DDIMScheduler
-from utils.ddim_inv import DDIMInversion
-from utils.edit_directions import construct_direction
-from utils.edit_pipeline import EditingPipeline
+from src.utils.ddim_inv import DDIMInversion
+from src.utils.edit_directions import construct_direction
+from src.utils.edit_pipeline import EditingPipeline
 
 if torch.cuda.is_available():
     device = "cuda"
